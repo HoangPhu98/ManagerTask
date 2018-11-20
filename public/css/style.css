@@ -1,0 +1,46 @@
+#main-wrap{
+    margin: 0px auto;
+    width: 1276px;
+    height: auto;
+    box-shadow: 0px 0px 8px gray;
+    background-color: #F8F8F8;
+}
+
+.float-left{
+    float: left;
+}
+
+.clear-float{
+    clear: both;
+}
+
+.colorwhite{
+    color: #fff;
+}
+
+nav{
+    height: 40px;
+    background-color: #1D5EA8;
+}
+
+div.item-menu{
+    background-color: #618FC2;
+    border-radius: 3px;
+    margin: 3px;
+    width: 100px;
+    height: 34px;
+}
+
+div.item-menu:hover{
+    background-color: #4A7EBA;
+    cursor: pointer;
+}
+
+div#name-app{
+    margin-left: 200px;
+}
+
+div#name-app span{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
