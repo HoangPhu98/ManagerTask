@@ -1,0 +1,45 @@
+.bar-modal {
+    border: 1px solid black;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.bar-modal textarea {
+    resize: none;
+}
+
+.bar-modal label {
+    display: block;
+}
+
+.bar-modal h3 {
+    margin-left: 10px;
+}
+
+.bar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-content div {
+    width: 240px;
+    margin-bottom: 10px;
+}
+
+.bar-content div textarea, .bar-content div input{
+    width: inherit;
+}
+
+.bar-input textarea:focus + div {
+    display: block;
+}
+
+.bar-input textarea + div {
+    display: none;
+}
+
+#exit-btn {
+    float: right;
+}

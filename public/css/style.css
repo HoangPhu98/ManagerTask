@@ -10,6 +10,10 @@
     float: left;
 }
 
+.float-right{
+    float: right;
+}
+
 .clear-float{
     clear: both;
 }

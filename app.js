@@ -24,15 +24,24 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
+var mainController = require('./app/controllers/main')
 var homeController = require('./app/controllers/home')
+var tablesController = require('./app/controllers/tables')
+var calendarController = require('./app/controllers/calendar')
+var tableController = require('./app/controllers/table')
+var barController = require('./app/controllers/bar')
+var profileController = require('./app/controllers/profile')
+var loginController = require('./app/controllers/login')
 
-app.use('/', homeController)
-
-
-
-
-
-
+app.use('/', mainController)
+app.use('/home', homeController)
+app.use('/tables', tablesController)
+app.use('/calendar', calendarController)
+app.use('/table', tableController)
+app.use('/bar', barController)
+app.use('/profile', profileController)
+app.use('/login', loginController)
 
 
 
