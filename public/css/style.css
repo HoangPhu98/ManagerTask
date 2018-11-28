@@ -48,3 +48,7 @@ div#name-app span{
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#main{
+    padding: 20px;
+}

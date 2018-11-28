@@ -24,7 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 var mainController = require('./app/controllers/main')
 var homeController = require('./app/controllers/home')
 var tablesController = require('./app/controllers/tables')

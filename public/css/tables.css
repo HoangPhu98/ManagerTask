@@ -1,0 +1,107 @@
+body {
+    margin: auto;
+    padding: 0;
+    width: 1280px;
+    height: 720px;
+    background-color: #F8F9F9;
+}
+
+li {
+    text-decoration: none;
+}
+
+.list-table li {
+    display: inline-block;
+}
+
+.table {
+    width: 200px;
+    height: 100px;
+    border: 1px black;
+    background-color: #0067A3;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+.table:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.back-button {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url(../img/back-icon.png);
+    background-size: 100%;
+    background-color: #F8F9F9;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#title {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    color: #17394D;
+}
+
+p {
+    font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.add-button {
+    float: right;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url(../img/add.png);
+    background-size: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.add-button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.header-list {
+    display: block;
+    position: relative;
+    height: 45px;
+}
+
+.header-list p {
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 23px;
+}
+
+.icon-time {
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/month.png);
+    background-size: 100%;
+}
