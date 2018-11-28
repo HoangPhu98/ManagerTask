@@ -1,54 +1,130 @@
-#main-wrap{
+/* body {
+    margin: auto;
+    padding: 0;
+    width: 1280px;
+    height: 720px;
+    background-color: #F8F9F9;
+} */
+
+html {
+    overflow-y: scroll;
+}
+
+#main-wrap {
     margin: 0px auto;
     width: 1276px;
-    height: auto;
+    min-height: 568px;
     box-shadow: 0px 0px 8px gray;
     background-color: #F8F8F8;
 }
 
-.float-left{
+.float-left {
     float: left;
 }
 
-.float-right{
+.float-right {
     float: right;
 }
 
-.clear-float{
+.clear-float {
     clear: both;
 }
 
-.colorwhite{
+.colorwhite {
     color: #fff;
 }
 
-nav{
-    height: 40px;
+nav {
+    height: 55px;
     background-color: #1D5EA8;
 }
 
-div.item-menu{
-    background-color: #618FC2;
-    border-radius: 3px;
+#profile-item {
     margin: 3px;
-    width: 100px;
-    height: 34px;
+    margin-right: 6px;
+    text-align: center;
+}
+#profile-item :hover{
+    color: #C0CAD0;
 }
 
-div.item-menu:hover{
+div.item-menu {
+    font-weight: bold;
+    text-align: center;
+    background-color: #618FC2;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    width: 120px;
+    height: 47px;
+}
+
+div.item-menu:hover {
     background-color: #4A7EBA;
     cursor: pointer;
 }
 
-div#name-app{
+div#name-app {
     margin-left: 200px;
+    cursor: pointer;
 }
 
-div#name-app span{
+div#name-app span {
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#main{
-    padding: 20px;
+
+form#form2 {
+    margin-top: 9px;
+    margin-right: 10px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    width: 220px;
+    background-color: #779FCB;
+}
+
+form#form2:hover, #form2:hover input[type=text], #form2:hover button {
+    background-color: #618FC2;
+}
+
+form#form2 input[type=text] {
+    border: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 7px;
+    width: 185px;
+    background-color: #779FCB;
+    color: white;
+}
+
+form#form2 input[type=text]:focus {
+    outline: none;
+    border: red;
+}
+
+form#form2 input[type=text]:focus #form2 {
+    border: 1px solid red;
+}
+
+form#form2 button {
+    background-color: #779FCB;
+    width: 31px;
+    float: right;
+    font-size: 15px;
+    padding: 7px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0px;
+}
+
+form#form2 button:hover{
+    color: rgb(168, 94, 228);
+
+}
+
+form#form2 button:focus {
+    outline: none;
 }

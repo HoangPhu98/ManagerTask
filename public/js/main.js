@@ -16,6 +16,14 @@ window.onload = () => {
     //     console.log(this.value);
     // }
     
+
+    var socket = io('http://localhost:3300');
+    socket.on('news', function (data) {
+        console.log(data);
+        socket.emit('my other event', { my: 'data' });
+    });
+
+
 }
 
 function directPage(){
@@ -48,3 +56,5 @@ function directPage(){
     xhttp.open('GET', last_url, true)
     xhttp.send()
 }
+
+
