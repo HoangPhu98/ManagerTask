@@ -8,7 +8,7 @@
         <link href="../css/reset.css" rel="stylesheet" />
         <link href="../css/table.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link href='../dist/dragula.css' rel='stylesheet' type='text/css' />
     </head>
     <body>
         <div id="main-wrap">
@@ -21,6 +21,43 @@
                         <span class="show-menu">Hien menu</span>
                     </div>
                     <div id="list-table">
+                        <div class="part_table float-left">
+                            <div class="head-tag">
+                                <span class="name-tag">Table 1</span>
+                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                            </div>
+                            <div id='left-defaults' class='container_d'>
+                                <div>Line 1</div>
+                                <div>Moving them anywhere else isn't quite possible</div>
+                                <div>Line 3</div>
+                            </div>
+                            <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
+                        </div>
+                        <div class="part_table float-left">
+                            <div class="head-tag">
+                                <span class="name-tag">Table 3</span>
+                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                            </div>
+                            <div id='right-defaults' class='container_d'>
+                                <div>There's also the possibility of moving elements around in the same container_d, changing their position</div>
+                                <div>This is the default use case. You only need to specify the container_ds you want to use</div>
+                                <div>More interactive use cases lie ahead</div>
+                            </div>
+                            <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
+                        </div>
+                        <div class="part_table float-left">
+                            <div class="head-tag">
+                                <span class="name-tag">Table 2</span>
+                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                            </div>
+                            <div id='right-defaults2' class='container_d'>
+                                <div>There's also the possibility of moving elements around in the same container_d, changing their position</div>
+                                <div>This is the default use case. You only need to specify the container_ds you want to use</div>
+                                <div>More interactive use cases lie ahead</div>
+                            </div>
+                            <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
+                        </div>
+                        <!--
                         <div class="float-left">
                             <table class="b-table" id="tb1"><tbody>
                                 <tr>
@@ -51,8 +88,8 @@
                                 </tr>
                             </tbody></table>
                         </div>
-                    </div>
-                    <div class="float-left">
+                        </div>
+                        <div class="float-left">
                             <table class="b-table" id="tb2"><tbody>
                                 <tr>
                                     <th>
@@ -81,12 +118,12 @@
                                     </td>
                                 </tr>
                             </tbody></table>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            
         </div>
-    
+    <script src='../dist/dragula.js'></script>
+    <script src='../js/table.min.js'></script>
     </body>
 </html>

@@ -1,0 +1,32 @@
+.profile {
+    width: 30%;
+    margin: 10vh auto;
+}
+
+.profile label {
+    font-size: 17px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.profile input {
+    font-size: 17px;
+    padding: 5px 10px;
+    width: 55%;
+}
+
+.profile .profile-detail {
+    margin-bottom: 20px;
+}
+
+.profile .submit-btn {
+    float: right;
+    padding: 5px 10px;
+    margin-right: 3%;
+}
+
+.profile .profile-title {
+    margin-bottom: 20%;
+}
