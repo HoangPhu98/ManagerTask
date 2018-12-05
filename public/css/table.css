@@ -24,15 +24,21 @@
     text-decoration: underline;
 }
 
-.list-table{
+#list-table{
+    min-height: inherit;
     overflow: auto;
     overflow-y: hidden;
+    width: 100%;
     white-space: nowrap;
-    width: inherit;
+}
+
+.arrange{
+    vertical-align: text-top;
+    display: inline-block;
+    white-space: normal;
 }
 
 .part_table{
-    display: inline-block;
     border-radius: 5px; 
     margin-left: 10px;
     margin-top: 10px;
@@ -128,3 +134,5 @@ box-shadow: 0px 0.5px gray;
 .add-collumn:hover{
     background-color: rgb(0, 5, 10, 0.6);
 }
+
+

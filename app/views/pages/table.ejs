@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--<%- include('../partials/head') %> -->
         <link href="../css/reset.css" rel="stylesheet" />
         <link href="../css/style.css" rel="stylesheet" />
         <link href="../css/table.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='../dist/dragula.css' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="../css/bar.css">
     </head>
     <body>
         <div id="main-wrap">
@@ -19,31 +20,31 @@
                         <span class="show-menu float-right">Hien menu</span>
                     </div>
                     <div id="list-table">
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 1</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
                             </div>
-                            <div id='left-defaults' class='container_d'>
-                                <div>Line 1</div>
-                                <div>Moving them anywhere else isn't quite possible</div>
+                            <div id='right-defaults0' class='container_d'>
+                                <div id="tag1_1_1">Line 1</div>
+                                <div id="tag1_1_2">Moving them anywhere else isn't quite possible</div>
                                 <div>Line 3</div>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 2</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
                             </div>
-                            <div id='right-defaults' class='container_d'>
+                            <div id='right-defaults1' class='container_d'>
                                 <div>There's also the possibility of moving elements around in the same container_d, changing their position</div>
                                 <div>This is the default use case. You only need to specify the container_ds you want to use</div>
                                 <div>More interactive use cases lie ahead</div>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 3</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -55,7 +56,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 4</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -64,7 +65,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 5</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -73,7 +74,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 6</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -82,7 +83,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 7</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -91,7 +92,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 8</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -100,7 +101,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 9</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -109,7 +110,7 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table float-left">
+                        <div class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 10</span>
                                 <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
@@ -118,17 +119,21 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div id="add-list" class="add-collumn float-left">
+                        <div id="add-list" class="add-collumn arrange">
                             <i class="fa fa-plus"></i>
                             Them danh sach khac
                         </div>
-                        
+                    
                     </div>
                     
                 </div>
             </div>
         </div>
+    <div id="outcontent"></div>
     <script src='../dist/dragula.js'></script>
     <script src='../js/table.min.js'></script>
+    <script src='../js/table.js'></script>
+
+
     </body>
 </html>
