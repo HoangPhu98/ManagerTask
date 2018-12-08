@@ -37,6 +37,7 @@ var tableController = require('./app/controllers/table')
 var barController = require('./app/controllers/bar')
 var profileController = require('./app/controllers/profile')
 var loginController = require('./app/controllers/login')
+var signupController = require('./app/controllers/signup')
 
 app.use('/', mainController)
 app.use('/home', homeController)
@@ -46,6 +47,7 @@ app.use('/table', tableController)
 app.use('/bar', barController)
 app.use('/profile', profileController)
 app.use('/login', loginController)
+app.use('/signup', signupController)
 
 
 
