@@ -1,0 +1,96 @@
+.container{
+    background-color: #F8F9F9;
+}
+
+#leftPage {
+    float: left;
+    width: 80%;
+}
+
+#rightPage {
+    float: right;
+    width: 19%;
+    text-align: center;
+    border: 0.5px solid #9A9A9A;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-table li {
+    display: inline-block;
+}
+
+.table {
+    width: 200px;
+    height: 100px;
+    border: 1px black;
+    background-color: #0067A3;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 6px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.table:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    color: #6B808C;
+}
+
+.star {
+    /* float: right; */
+    content: url(../img/star.png);
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+p, h2, h3 {
+    font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.leftBar {
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.leftBar li span {
+    background-color: #E4F0F6;
+    width: 100%;
+    display: block;
+    height: 100px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.leftBar li span:hover {
+    background-color: #D9DFE2;
+    cursor: pointer;
+}
