@@ -57,6 +57,7 @@ background-color: #DEE2E5;
 }
 
 .container_d>div{
+z-index: 10;
 margin-bottom: 8px;
 padding: 10px;
 background-color: #FFFFFF;
@@ -136,3 +137,24 @@ box-shadow: 0px 0.5px gray;
 }
 
 
+.dropdown button{
+    border: none;
+}
+.menu-tag{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#saveTag{
+    color: green;
+}
+
+#buble{
+    z-index: 2;
+    width: 100%;
+    min-height: 700px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}

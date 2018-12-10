@@ -1,20 +1,85 @@
 .bar-modal {
-    border: 1px solid black;
-    width: 400px;
-    margin: auto;
-    padding-bottom: 50px;
-}
-
-.bar-modal textarea {
-    resize: none;
-}
-
-.bar-modal label {
     display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
-.bar-modal h3 {
+.bar-modal button {
+    padding: 3px 7px;
+    border: none;
+    background-color: transparent;
+}
+
+.bar-modal button:focus {
+    outline: none;
+}
+
+.bar-modal button.save-btn {
+    color: #00bd00;
+    font-size: 15px;
+    border: 2px solid #00bd00;
+    border-radius: 5px;
+}
+
+.bar-modal button.cancel-btn {
+    color: #d45b52;
+    font-size: 15px;
+    border: 2px solid #d45b52;
+    border-radius: 5px;
+}
+
+.bar-modal-content {
+    background-color: #e1e4e6;
+    border-radius: 5px;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+    position: relative;
+    top: 40px;
+}
+
+.bar-modal-content textarea {
+    border-radius: 5px;
+    resize: none;
+    padding: 5px;
+}
+
+.bar-modal-content textarea:focus {
+    outline: none;
+}
+
+.bar-modal-content label {
+    font-size: 16px;
+    display: block;
+    position: relative;
+}
+
+.bar-modal-content h3 {
+    padding-top: 10px;
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*.bar-modal-content #time input[type='checkbox'] {*/
+/*padding: 3px;*/
+/*position: absolute;*/
+/*left: -20px;*/
+/*top: 5px*/
+/*}*/
+
+.bar-modal-content #time input[type='datetime-local'] {
+    font-size: 14px;
+}
+
+.bar-modal-content #time div {
+    position: relative;
 }
 
 .bar-content {
@@ -23,23 +88,112 @@
     align-items: center;
 }
 
-.bar-content div {
-    width: 240px;
+.bar-content > div {
+    width: 100%;
+    padding: 0 55px;
     margin-bottom: 10px;
 }
 
-.bar-content div textarea, .bar-content div input{
+.bar-content div textarea{
     width: inherit;
 }
 
-.bar-input textarea:focus + div {
-    display: block;
+.bar-content div input {
+    border: none;
+    border-bottom: 1px solid rgb(169, 169, 169);
+    padding: 5px;
 }
 
-.bar-input textarea + div {
-    display: none;
+.bar-input label > i {
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+
+.task-done {
+    background-color: #088e08;
+    color: white;
+}
+
+.overdue {
+    background-color: #ee625a;
+    color: white;
+}
+
+.warning {
+    background-color: #f3ee00;
+    color: black;
 }
 
 #exit-btn {
+    font-size: 20px;
     float: right;
+    padding-right: 15px;
+}
+
+#exit-btn:hover {
+    color: #d45b52;
+}
+
+/* Customize the label (the container) */
+.custom-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-container:hover input ~ .checkmark {
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-container .checkmark:after {
+    left: 11px;
+    top: 5px;
+    width: 9px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }

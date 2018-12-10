@@ -7,12 +7,10 @@ var engine = require('ejs-mate')
 var config = require('./config/config')
 
 
-
 var app = express()
 var port = config.port
 
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
 
 app.engine('ejs', engine);
  
@@ -48,13 +46,6 @@ app.use('/profile', profileController)
 app.use('/login', loginController)
 
 
-
-io.on('connection', function (socket) {
-    socket.emit('news', { hello: 'world' });
-    socket.on('my other event', function (data) {
-        console.log(data);
-    });
-});
 
 server.listen(port, () => {
     console.log("App running at http://127.0.1:3300")

@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='../dist/dragula.css' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="../css/bar.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <script src="../bootstrap/js/jquery.min.js"></script>
     </head>
     <body>
+        <div id="buble"></div>
         <div id="main-wrap">
             <nav><%- partial("./partials/navigator"); %></nav>
             <div id="main">
@@ -20,22 +23,40 @@
                         <span class="show-menu float-right">Hien menu</span>
                     </div>
                     <div id="list-table">
-                        <div class="part_table arrange">
+                        <div id="tag_1" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 1</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults0' class='container_d'>
                                 <div id="tag1_1_1">Line 1</div>
                                 <div id="tag1_1_2">Moving them anywhere else isn't quite possible</div>
-                                <div>Line 3</div>
+                                <div id="tag1_1_3">Line 3</div>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_2" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 2</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults1' class='container_d'>
                                 <div>There's also the possibility of moving elements around in the same container_d, changing their position</div>
@@ -44,10 +65,19 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_3" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 3</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults2' class='container_d'>
                                 <div>There's also the possibility of moving elements around in the same container_d, changing their position</div>
@@ -56,64 +86,127 @@
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_4" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 4</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults3' class='container_d'>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_5" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 5</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults4' class='container_d'>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_6" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 6</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults5' class='container_d'>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_7" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 7</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults6' class='container_d'>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_8" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 8</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults7' class='container_d'>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_9" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 9</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults8' class='container_d'>
                             </div>
                             <span class="add-tag"><i class="fa fa-plus"></i> Add new tag</span>
                         </div>
-                        <div class="part_table arrange">
+                        <div id="tag_10" class="part_table arrange">
                             <div class="head-tag">
                                 <span class="name-tag">Table 10</span>
-                                <span class="menu-tag"><i class="fa fa-ellipsis-h"></i></span>
+                                <div class="dropdown float-right" >
+                                    <button data-toggle="dropdown">
+                                        <span class="menu-tag" ><i class="fa fa-ellipsis-h"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Xoa</a></li>
+                                      <li><a href="#">Them dong</a></li>
+                                      <li><a href="#">Doi ten</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div id='right-defaults9' class='container_d'>
                             </div>
@@ -135,5 +228,6 @@
     <script src='../js/table.js'></script>
 
 
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

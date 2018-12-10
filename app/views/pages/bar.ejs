@@ -1,26 +1,47 @@
-    <div class="bar-modal">
-        <button id="exit-btn">X</button>
+<div class="bar-modal">
+    <div class="bar-modal-content">
+        <button id="exit-btn" onclick="closeModal()">X</button>
         <h3>1. Phân tích yêu cầu</h3>
         <div class="bar-content">
             <div class="bar-input">
-                <label for="target-content">Mục tiêu</label>
-                <textarea name="target-content" id="target-content" cols="30" rows="3"></textarea>
-                <div>
-                    <button>Lưu</button>
-                    <button>Hủy</button>
+                <label for="target-content">
+                    <i class="fa fa-bullseye" aria-hidden="true"></i>
+                    Mục tiêu
+                </label>
+                <textarea name="target-content" id="target-content" cols="30" rows="6" onfocus="removeHidden(this.nextElementSibling)"></textarea>
+                <div class="hidden">
+                    <button class="save-btn">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i> Lưu
+                    </button>
+                    <button class="cancel-btn" onclick="cancelInput(this)">
+                        <i class="fa fa-ban" aria-hidden="true"></i> Hủy
+                    </button>
                 </div>
             </div>
             <div class="bar-input">
-                <label for="note">Ghi chú</label>
-                <textarea name="note" id="note" cols="30" rows="3"></textarea>
-                <div>
-                    <button>Lưu</button>
-                    <button>Hủy</button>
+                <label for="note">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Ghi chú</label>
+                <textarea name="note" id="note" cols="30" rows="6" onfocus="removeHidden(this.nextElementSibling)"></textarea>
+                <div class="hidden">
+                    <button class="save-btn">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i> Lưu
+                    </button>
+                    <button class="cancel-btn" onclick="cancelInput(this)">
+                        <i class="fa fa-ban" aria-hidden="true"></i> Hủy
+                    </button>
                 </div>
             </div>
             <div id="time">
                 <label for="deadline">Ngày hết hạn</label>
-                <input type="datetime-local" id="deadline">
+                <div>
+                    <label class="custom-container">
+                        <input type="checkbox" onclick="onDeadlineChange(this.parentElement.nextElementSibling)">
+                        <span class="checkmark"></span>
+                    </label>
+                    <input type="datetime-local" id="deadline" oninput="onDeadlineChange(this)">
+                </div>
             </div>
         </div>
     </div>
+</div>

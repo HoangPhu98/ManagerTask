@@ -10,20 +10,6 @@ window.onload = () => {
     directPages.forEach(element => {
         element.onclick = directPage
     });
-
-
-    // document.getElementById("setChange").onchange = function(){
-    //     console.log(this.value);
-    // }
-    
-
-    var socket = io('http://localhost:3300');
-    socket.on('news', function (data) {
-        console.log(data);
-        socket.emit('my other event', { my: 'data' });
-    });
-
-
 }
 
 function directPage(){
