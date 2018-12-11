@@ -20,7 +20,7 @@ addTag.forEach(element => {
         nodeHtml.innerHTML = "<input style='z-index: 1000' id='inContent' type='text' autofocus />"
             + "<button style='z-index: 1000;' id='saveTag'>Luu</button>"
             + "<button id='cancelTag'>Huy</button>"
-        let nodeList = nodeCur.parentNode.children[1];
+        let nodeList = nodeCur.parentNode.children[2];
         let idNode = nodeCur.parentNode.id + (nodeList.children.length + 1)
         nodeHtml.id = idNode
         
@@ -58,8 +58,28 @@ function createNewTag(idNode, hideTag){
 document.getElementById("add-list").onclick = function(){
     console.log("hello")
     nb_visible++;
-    document.querySelectorAll(".part_table")[nb_visible].style.display = 'inline-block'
+    let newPart = document.querySelectorAll(".part_table")[nb_visible]
+    let childNewPart = newPart.children;
+
+    childNewPart[0].style.display = 'block'
+    childNewPart[1].style.display = 'none'
+    childNewPart[2].style.display = 'none'
+    childNewPart[3].style.display = 'none'
+    newPart.style.display = 'inline-block';
+
+    let curGroup = childNewPart[0].children;
+
+    curGroup[1].onclick = function(){
+        var content = curGroup[0].value;
+        childNewPart[1].children[0].innerHTML = content
+        childNewPart[0].style.display = 'none'
+        childNewPart[1].style.display = 'block'
+        childNewPart[2].style.display = 'block'
+        childNewPart[3].style.display = 'block'
+    }
 }
+
+
 
 document.getElementById("tag1_1_1").onclick = () => {
     var xhttp = new XMLHttpRequest()

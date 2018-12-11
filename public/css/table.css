@@ -158,3 +158,19 @@ box-shadow: 0px 0.5px gray;
     top: 0px;
     left: 0px;
 }
+
+.changeNameList{
+    display: none;
+    padding: 4px;
+}
+
+.changeNameList input[type=text]{
+    width: 100%;
+    font-size: 17px;
+    padding: 3px 10px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
