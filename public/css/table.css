@@ -8,9 +8,12 @@
     height: 45px;
     background-color:rgba(0,0,0,.24);
     text-align: left;
+    clear: both;
 }
 
 .name-table{
+    display: inline-block;
+    float: left;
     font-size: 23px;
     font-weight: bold;
     display: inline-block;
@@ -173,4 +176,65 @@ box-shadow: 0px 0.5px gray;
     border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+#inContent{
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    padding: 3px 8px;
+}
+
+#saveTag{
+    font-size: 17px;
+    padding: 4px 16px;
+    color: white;
+    background-color: #4acf53;
+    border: none;
+    border-radius: 3px;
+}
+
+#saveTag:hover{
+    background-color: #2ba133;
+}
+
+#cancelTag{
+    display: inline-flex;
+    box-sizing: border-box;
+    font-size: 35px;
+    vertical-align: bottom;
+    padding-left: 6px;
+    color: 	 #b3b3b3;
+}
+
+#cancelTag:hover{
+    color: gray;
+}
+
+.changeNameList button{
+    font-size: 17px;
+    padding: 5px 12px;
+    color: white;
+    background-color: #00b300;
+    border: none;
+    border-radius: 3px;
+}
+
+.changeNameList button:hover{
+    background-color: #009900;
+}
+
+.changeNameList span{
+    display: inline-flex;
+    box-sizing: border-box;
+    font-size: 30px;
+    vertical-align: bottom;
+    padding-left: 6px;
+    color: 	 #b3b3b3;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.changeNameList span:hover{
+    color: gray;
 }

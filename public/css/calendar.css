@@ -1,5 +1,5 @@
 #main {
-    margin: auto;
+    margin: 0px;
     width: auto;
     height: auto;
     min-width: 1276px;
@@ -13,7 +13,6 @@ p {
     font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
     font-weight: 700;
 }
-
 .container {
     display: block;
     /* position: relative; */

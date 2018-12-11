@@ -1,14 +1,11 @@
-let nb_visible = 3
-const max_visible = 10
-document.getElementById("buble").style.display = 'none'
+
 
 for(let i = nb_visible; i < max_visible; i++){
-    console.log("right-defaults" + i)
     document.getElementById("right-defaults" + i).parentNode.style.display = "none"
 }
-let barModal = null;
+barModal = null;
 
-let addTag = document.querySelectorAll(".add-tag")
+addTag = document.querySelectorAll(".add-tag")
 addTag.forEach(element => {
     let nodeCur = element;
     element.onclick = ()=>{
@@ -17,9 +14,9 @@ addTag.forEach(element => {
         //create input tag  to get content for tag
         let nodeHtml = document.createElement("div")
         nodeHtml.style.whiteSpace = 'normal'
-        nodeHtml.innerHTML = "<input style='z-index: 1000' id='inContent' type='text' autofocus />"
-            + "<button style='z-index: 1000;' id='saveTag'>Luu</button>"
-            + "<button id='cancelTag'>Huy</button>"
+        nodeHtml.innerHTML = "<textarea id='inContent' autofocus rows='2' cols='23'></textarea>"
+            + "<button style='z-index: 1000;' id='saveTag'>Them the</button>"
+            + "<span id='cancelTag'><i class='fa fa-times-circle'></i></span>"
         let nodeList = nodeCur.parentNode.children[2];
         let idNode = nodeCur.parentNode.id + (nodeList.children.length + 1)
         nodeHtml.id = idNode
@@ -71,7 +68,7 @@ document.getElementById("add-list").onclick = function(){
 
     curGroup[1].onclick = function(){
         var content = curGroup[0].value;
-        childNewPart[1].children[0].innerHTML = content
+        childNewPart[1].children[0].innerHTML = content;
         childNewPart[0].style.display = 'none'
         childNewPart[1].style.display = 'block'
         childNewPart[2].style.display = 'block'
