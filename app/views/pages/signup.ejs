@@ -20,9 +20,6 @@
 </head>
 
 <body>
-	<nav>
-		<%- partial("./partials/navigator"); %>
-	</nav>
 	<main>
 		<div class="container">
 			<div class="row">
@@ -38,9 +35,11 @@
 									<input type="password" name="password" class="form-control" placeholder="Password" value="">
                                 </div>
                                 <div class="form-group">
-									<input type="password" name="re-password" class="form-control" placeholder="Re-enter Password" value="">
+									<input type="password" name="re_password" class="form-control" placeholder="Re-enter Password" value="">
 								</div>
-
+								<% if(data.status == 0){ %> 
+									<span class='error'><%= data.message %></span>
+								<% } %>
 								<!-- <%
                                     var infoHidden = "hidden";
                                     var msg = "";

@@ -6,11 +6,11 @@ let curYear
 
 let itemTables
 
-let nb_visible = 3
+let nb_visible = 0
 const max_visible = 10
 let barModal;
-let addTag
-
+let addTag;
+let flagSaveTag;
 
 window.onload = () => {
 

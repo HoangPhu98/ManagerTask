@@ -18,22 +18,22 @@ addTag.forEach(element => {
             + "<button style='z-index: 1000;' id='saveTag'>Them the</button>"
             + "<span id='cancelTag'><i class='fa fa-times-circle'></i></span>"
         let nodeList = nodeCur.parentNode.children[2];
-        let idNode = nodeCur.parentNode.id + (nodeList.children.length + 1)
+        let idNode = nodeCur.parentNode.id + '_' + (nodeList.children.length + 1)
         nodeHtml.id = idNode
         
         nodeList.appendChild(nodeHtml)
         
         createNewTag(idNode, nodeCur)
        
-        
     }
 
 });
 
-function createNewTag(idNode, hideTag){
-    // document.getElementById("buble").style.display = 'inline-block'
+flagSaveTag = false;
 
+function createNewTag(idNode, hideTag){
     document.getElementById("saveTag").onclick = () => {
+        flagSaveTag = true;
         let content = document.getElementById('inContent').value
         let curNode = document.getElementById(idNode)
         while (curNode.firstChild) {
@@ -49,6 +49,13 @@ function createNewTag(idNode, hideTag){
         hideTag.style.display = 'block'
     }
     
+    document.getElementById('inContent').onblur = function(){
+        if(flagSaveTag == false){
+            document.getElementById(idNode).remove()
+            hideTag.style.display = 'block';
+        }
+        flagSaveTag = false;
+    }
 }
 
 
@@ -87,7 +94,7 @@ document.getElementById("tag1_1_1").onclick = () => {
             let head = document.getElementsByTagName('head')[0];
             let script = document.createElement('script');
             script.id = "setBar";
-            script.src = '../js/bar.js';
+            script.src = 'js/bar.js';
             head.appendChild(script);
         }
     };

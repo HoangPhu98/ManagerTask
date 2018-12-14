@@ -1,16 +1,30 @@
 var express = require('express')
 var router = express.Router()
-router.get('/', 
-    // (req, res, next) => {
-    //     console.log("cookie: ")
-    //     console.log(req.cookies)
-    //     if('username' in req.cookies){
-    //         next()
-    //     }else{
-    //         res.redirect('/login')
-    //     }
-    // }, 
-    (req, res) => {
+var user = require('../../data/user')
+
+var checkAccount = (req, res, next) => {
+    console.log(req.cookies.account)
+    let account = req.cookies.account;
+    
+    if(account != undefined){
+        let flag = false;
+        user.forEach(e => {
+            if(e.username == account.username && e.password == account.password){
+                flag = true;
+            }
+        })
+        if(flag){
+            next();
+        }else{
+            res.redirect('/login')
+        }
+    }else{
+        res.redirect('/login')
+    }
+}
+
+router.get('/', checkAccount
+    , (req, res) => {
         console.log("Home")
         res.render('main')
     }
