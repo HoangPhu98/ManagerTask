@@ -56,8 +56,10 @@ a.btn.btn-success.btn-lg {
     color: #fff;
 }
 
-section {
-    height: 669px;
+@media screen {
+    section {
+        height: 669px;
+    }
 }
 
 section.app-content {
@@ -120,4 +122,30 @@ ul.social li {
 
 ul.social li a {
     color: #fff;
+}
+
+@media (min-width: 992px) {
+    section.app-content {
+        height: 1100px;
+    }
+
+    section.guide-content {
+        height: 480px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.app-content {
+        height: 2100px;
+    }
+
+    section.guide-content {
+        height: 630px;
+    }
+}
+
+@media (min-width: 1200px) {
+    section.app-content {
+        height: 669px;
+    }
 }
