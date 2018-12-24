@@ -1,0 +1,42 @@
+body {
+    background-image: linear-gradient(rgba(0, 80, 115, 0.5), rgba(39, 143, 187, 0.8)), url('../img/workdesk.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav.navbar.navbar-default {
+    background-color: rgba(0, 80, 115, 0.5);
+    border: none;
+}
+
+.navbar-default a.navbar-brand {
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-size: 45px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.navbar-default a.navbar-brand:hover,  .navbar-default a.navbar-brand:active {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 10%;
+    padding-top: 4%;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    text-align: center;
+}

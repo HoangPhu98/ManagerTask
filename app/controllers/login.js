@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
         'status': 1
     }
     res.render('pages/login', {data: resData})
+    // res.render('pages/intro');
 })
 
 router.post('/', (req, res, next) => {

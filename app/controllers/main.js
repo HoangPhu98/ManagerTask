@@ -16,10 +16,12 @@ var checkAccount = (req, res, next) => {
         if(flag){
             next();
         }else{
-            res.redirect('/login')
+            // res.redirect('/login')
+            res.render('pages/intro')
         }
     }else{
-        res.redirect('/login')
+        // res.redirect('/login')
+        res.render('pages/intro')
     }
 }
 

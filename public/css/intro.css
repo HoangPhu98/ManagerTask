@@ -1,0 +1,123 @@
+html {
+    font-size: 20px;
+    /* background-color: #fff; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 80, 115, 0.5), rgba(39, 143, 187, 0.8)), url('../img/workdesk.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav.navbar.navbar-default {
+    background-color: rgba(0, 80, 115, 0.5);
+    border: none;
+}
+
+.navbar-default a.navbar-brand {
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-size: 45px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.navbar-default a.navbar-brand:hover,  .navbar-default a.navbar-brand:active {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: underline;
+}
+
+section.intro-content {
+    text-align: center;
+    padding-top: 15%;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+    margin: 20px 0;
+}
+
+a.btn.btn-success.btn-lg {
+    box-shadow: 0 3px #006644;
+    font-weight: 600;
+    color: #fff;
+}
+
+section {
+    height: 669px;
+}
+
+section.app-content {
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header-text{
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    margin: 40px 0;
+}
+
+a.feature {
+    display: block;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: screen;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .06);
+    border-radius: 5px;
+    padding: 40px 28px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+i.fas, i.far{
+    padding: 10%;
+    font-size: 45px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+a.feature:hover {
+    bottom: 30px;
+}
+
+section.guide-content {
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    color: midnightblue;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section.about-content {
+    background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul.social li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+}
+
+ul.social li a {
+    color: #fff;
+}
