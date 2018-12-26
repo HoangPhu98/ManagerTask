@@ -95,6 +95,6 @@ p, h2, h3 {
     cursor: pointer;
 }
 
-p {
-position: absolute;
-}
+.list-table .table p {
+    position: absolute;
+} 
