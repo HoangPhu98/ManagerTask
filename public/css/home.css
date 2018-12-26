@@ -94,3 +94,7 @@ p, h2, h3 {
     background-color: #D9DFE2;
     cursor: pointer;
 }
+
+p {
+position: absolute;
+}
